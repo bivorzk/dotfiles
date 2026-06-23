@@ -1,0 +1,66 @@
+/* =========================================================
+   SmearCursor Visual Layer (NO animation conflicts)
+   ========================================================= */
+
+/* Base cursor styling — keep this minimal */
+.monaco-editor .cursor {
+    background: #bb9af7 !important;
+    box-shadow: 0 0 6px #bb9af7 !important;
+    border-radius: 1px !important;
+
+    /* IMPORTANT: do NOT animate position or transform */
+    transition: none !important;
+    transform: none !important;
+}
+
+/* Ensure no fake trails interfere */
+.monaco-editor .cursor::after,
+.monaco-editor .cursor::before {
+    content: none !important;
+}
+
+/* Disable VS Code caret animation interference */
+.monaco-editor .cursor-smooth-caret-animation {
+    transform: none !important;
+}
+
+
+
+/* =========================================================
+   UI Enhancements (safe, non-conflicting)
+   ========================================================= */
+
+/* Subtle sidebar hover slide */
+.monaco-list-row {
+    transition: transform 0.12s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.monaco-list-row:hover {
+    transform: translateX(4px);
+}
+
+
+/* Command palette + hover styling */
+.quick-input-widget,
+.monaco-hover {
+    backdrop-filter: blur(4px);
+    border: 1px solid #bb9af7 !important;
+}
+
+
+/* Smooth editor scrolling feel */
+.monaco-editor {
+    scroll-behavior: smooth;
+}
+
+
+/* Optional: soften selection highlight */
+.monaco-editor .selected-text {
+    background-color: rgba(187, 154, 247, 0.15) !important;
+}
+
+
+/* Optional: subtle active line polish */
+.monaco-editor .view-overlays .current-line {
+    border: none !important;
+}
