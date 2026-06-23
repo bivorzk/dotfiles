@@ -1,0 +1,94 @@
+{
+  "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-dark",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "jdk.jdkhome": "c:\\Users\\bivorzk\\Oracle_JDK-23",
+  "cmake.showOptionsMovedNotification": false,
+  "database-client.autoSync": true,
+  "editor.mouseWheelZoom": true,
+  "mdb.mcp.server": "prompt",
+  "git.autofetch": true,
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "chat.tools.terminal.autoApprove": {
+    "Move-Item": true,
+    "where": true
+  },
+  "python.createEnvironment.trigger": "off",
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "markdown-preview-enhanced.previewTheme": "github-dark.css",
+  "hediet.vscode-drawio.resizeImages": null,
+  "zig.zls.enabled": "off",
+  "cmake.showConfigureWithDebuggerNotification": false,
+  "editor.fontFamily": "'FiraCode Nerd Font', monospace",
+
+  /* --- Optimized for SmearCursor Extension --- */
+  "editor.cursorStyle": "line",
+  "editor.cursorWidth": 2, // Fixed: Lower width removes the "gap" between letters
+  "editor.cursorBlinking": "solid", // Essential for the extension to render smoothly
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.smoothScrolling": true,
+  "editor.padding.top": 8,
+  "editor.padding.bottom": 8,
+  "window.titleBarStyle": "custom",
+  "window.controlsStyle": "custom",
+
+  /* --- Extension Specific Config --- */
+  "smearcursor.color": "#bb9af7",
+  "smearcursor.thickness": 2, // Matches cursor width for seamless trail
+  "smearcursor.max_length": 12, // Adjust for tail length
+  "smearcursor.opacity": 0.9,
+  "smearcursor.animation_duration": 150,
+
+  /* --- Injection Config (CSS/JS) --- */
+  "custom-ui-style.external.imports": [
+    "file:///c:/Users/bivorzk/Documents/custom-animation.css"
+  ],
+  "vscode_custom_css.imports": [
+    "file:///c:/Users/bivorzk/Documents/custom-animation.css",
+    "file:///c:/Users/bivorzk/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js",
+    "file://c:\\Users\\bivorzk\\.vscode\\extensions\\yesitsfebreeze.smearcursor-1.3.0\\_smearcursor.js"
+  ],
+
+  /* --- Terminal & OS Compatibility --- */
+  "terminal.integrated.profiles.linux": {
+    "bash": { "path": "bash", "icon": "terminal-bash" },
+    "zsh": { "path": "/usr/bin/zsh" },
+    "fish": { "path": "fish" },
+    "tmux": { "path": "tmux", "icon": "terminal-tmux" },
+    "pwsh": { "path": "pwsh", "icon": "terminal-powershell" }
+  },
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "glassit-linux.opacity": 1,
+  "vscode_vibrancy.preferedDarkTheme": "GitHub Dark Default",
+
+  /* --- Theming & Colors --- */
+  "workbench.colorCustomizations": {
+    "editorCursor.foreground": "#bb9af7",
+    "terminalCursor.foreground": "#bb9af7",
+    "editorLineNumber.activeForeground": "#bb9af7",
+    "editor.lineHighlightBackground": "#bb9af715",
+    "editor.lineHighlightBorder": "#00000000",
+    "sideBar.border": "#bb9af733",
+    "list.hoverBackground": "#bb9af715"
+  },
+  "chat.viewSessions.orientation": "stacked",
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": false,
+    "scminput": false
+  },
+  "chat.tools.urls.autoApprove": {
+    "https://code.visualstudio.com": true,
+    "https://github.com/microsoft/vscode/wiki/*": true,
+    "https://www.warcraftlogs.com": true
+  },
+
+  "rust-analyzer.checkOnSave": true,
+  "rust-analyzer.check.command": "clippy",
+  "rust-analyzer.inlayHints.chainingHints.enable": true,
+  "rust-analyzer.inlayHints.closureCaptureHints.enable": true,
+  "rust-analyzer.inlayHints.closureReturnTypeHints.enable": "with_block",
+  "rust-analyzer.inlayHints.lifetimeElisionHints.enable": "skip_trivial",
+  "rust-analyzer.inlayHints.parameterHints.enable": true,
+  "rust-analyzer.inlayHints.typeHints.enable": true
+}
